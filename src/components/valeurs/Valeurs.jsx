@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import s from './valeurs.module.scss';
 import Valeurcard1 from '../../components/valeurcard1/Valeurcard1'; 
 import Valeurcard2 from '../../components/valeurcard2/Valeurcard2'; 

@@ -8,7 +8,7 @@ const Valeurcard1 = () => {
     return (
         <div className="valeur_card">
             <div className="img_card_container img_card_container1">
-                <img src={img_card1} className={s.img_card} alt="Image valorisant le fait maison chez Sunset Ramen"/>
+                <img src={img_card1} className={s.img_card} alt="Valorise le fait maison chez Sunset Ramen"/>
                 <div className="container_circle_card container_circle_card1">
                 </div>
             </div>
