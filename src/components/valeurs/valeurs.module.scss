@@ -1,0 +1,38 @@
+
+
+.valeur_section_text {
+    width: 87.5%;
+    span {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 0;
+            background-image: url(../../assets/images/circle-valeurs.png);
+            width: 267px;
+            height: 74px;
+            background-size: cover;
+        }
+    }
+}
+
+
+.content__valeurs_duo {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    gap: 2rem;
+}
+
+.content__valeurs_text_duo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 66.66%;
+}
+
+
+Valeurcard2 {
+    width: 33.33%;
+}

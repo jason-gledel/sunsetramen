@@ -1,0 +1,42 @@
+@import '../../styles/scss/variables';
+
+.container__footerdown {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+     background: $darker-blue;
+    .line_logo_nav {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding: 0 0 2rem 0;
+        border-bottom: 1px solid $grey-blue;
+        .logo_footer {
+            width: 126px;
+            height: 50px;
+            background-image: url(../../assets/images/logo-footer.png);
+            background-size: cover;
+        }
+        .nav_footer {
+            display: flex;
+            gap: 4rem;
+        }
+    }
+    .line_socials_mentions {
+        padding: 2rem 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        .socials {
+            display: flex;
+            gap: 2rem;
+            i:before {
+                color: $light-blue;
+            }
+        }
+        .mentions {
+            display: flex;
+            gap: 2rem;
+            color: $grey-blue;
+        }
+    }
+}

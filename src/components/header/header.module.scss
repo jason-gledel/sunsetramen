@@ -1,0 +1,57 @@
+@import '../../styles/scss/variables';
+@import '../../styles/scss/iconfonts';
+
+
+.header {
+    background-color: $dark-blue;
+    &__container {
+        padding: 2rem 4rem;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left {
+            display: flex;
+            gap: 4rem;
+        }
+        &__right {
+            display: flex;
+            gap: 4rem;
+        }
+
+    }
+    &__logo {
+        background-image: url(../../assets/images/logo-header.png);
+        height: 48px;
+        width: 120px;
+        background-size: contain;
+        transition: 0.3s;
+        &:hover {
+            rotate: (-3deg);
+        }
+    }
+    &__nav_panier {
+        font-size: 0.75rem;
+        color: $beige;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    &__nav_lang {
+        ._flag {
+            background-image: url(../../assets/images/france.jpg);
+            width: 26px;
+            height: 1rem;
+            background-size: cover;
+
+        }
+    }
+}
+
+
+

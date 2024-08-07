@@ -1,0 +1,410 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'iconfonts';
+
+html {
+    font-size: 16px;
+}
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Anton&display=swap');
+
+body {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: $dark-blue;
+    position: relative;
+    p {
+        position: relative;
+        z-index: 1;
+    }
+    Link {
+        position: relative;
+        z-index: 1;
+    }
+    a {
+        position: relative;
+        z-index: 1;
+    }
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../assets/images/noise.jpg);
+        z-index: 1;
+        content: '';
+        background-size: contain;
+        mix-blend-mode:color-dodge;
+        opacity: 0.08;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+
+
+
+.Header {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.primary_btn_stroke {
+    padding: 1rem 1.5rem;
+    border: 1.5px solid #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.primary_stroke_orange {
+    border: 1.5px solid $orange;
+    color: $orange;
+    i:before {
+        color: $orange;
+    }
+}
+
+
+
+.secondary_btn {
+    height: fit-content;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+    padding: 0 0 8px 0;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s;
+        background-color: #fff;
+    }
+    &:hover::after {
+        width: 0%;
+    }
+}
+
+
+.btn_beige {
+    color: $beige;
+    &::after {
+        background-color: $beige;
+        background-color: $beige;
+    }
+}
+.btn_grey_blue{
+    color: $grey-blue;
+    &::after {
+        background-color: $grey-blue;
+        background-color: $grey-blue;
+    }
+}
+.btn_orange {
+    color: $orange;
+    &::after {
+        background-color: $orange;
+        background-color: $orange;
+    }
+}
+.btn_light_blue {
+    color: $light-blue;
+    &::after {
+        background-color: $light-blue;
+        background-color: $light-blue;
+    }
+}
+.btn_blue {
+    color: $blue;
+    &::after {
+        background-color: $blue;
+        background-color: $blue;
+    }
+}
+.btn_dark_blue {
+    color: $beige;
+    &::after {
+        background-color: $dark-blue ;
+        background-color: $dark-blue ;
+    }
+}
+.btn_darker_blue {
+    color: $beige;
+    &::after {
+        background-color: $darker-blue;
+        background-color: $darker-blue;
+    }
+}
+
+
+
+.basket_header:before {
+    color:$blue;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background: $beige;
+    border-radius: 50%;
+}
+
+
+.container__main {
+    padding: 0 4rem;
+
+}
+
+.container__main__pad {
+    padding: 6rem 4rem;
+
+}
+
+.container_dark {
+    background: #170647;
+    background-image: url('../../assets/images/bg-blanc.png');
+}
+
+
+h1 {
+    font-size: $h1;
+    font-family: "Anton", sans-serif;
+    color: $beige;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-size: $h2;
+    font-family: "Anton", sans-serif;
+    color: $beige;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+
+.light_blue_text {
+    color: $light-blue;
+    line-height: 150%;
+}
+
+
+
+.subtitle_ramen {
+    font-size: 1rem;
+    color: $orange;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/circle-ramen.png);
+        top: -22px;
+        left: -30px;
+        width: 217px;
+        height: 60px;
+        background-size: cover;
+    }
+}
+
+
+.h2_underline {
+    position: relative;
+    width: fit-content;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: $beige;
+        opacity: 0.3;
+    }
+}
+
+
+.text_beige {
+    color: $beige;
+    line-height: 150%;
+}
+
+.prix_main {
+    padding: 1rem;
+    background-color: $darker-blue;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1.5px dashed $marron;
+    color: $orange;
+    width: fit-content;
+}
+
+
+// BOUTONS
+
+.buttons_couple {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.main_btn_orange_cart {
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    color: $dark-blue;
+    background: $orange;
+    font-weight: bold;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.basket-ramenhome:before {
+    color:$dark-blue;
+    font-size: 1.2rem;
+}
+
+
+
+
+// Cards des valeurs
+
+
+.container__valeurs {
+    padding: 6rem 4rem;
+    background: $blue;
+    display: flex;
+    gap: 2rem;
+}
+
+.valeur_card {
+    display: flex;
+    flex-direction: column;
+  
+    img {
+      width: 100%;
+      height: max-content;
+    }
+  
+    .valeur_text_bloc {
+      background: $beige;
+      color: $dark-blue;
+      line-height: 160%;
+      padding: 2rem;
+      background-image: url(../../assets/images/bg-noir.png);
+      background-size: cover;
+    }
+    .img_card_container {
+        position: relative;
+        display: flex;
+        .container_circle_card {
+            position: absolute;
+            background-image: url(../../assets/images/circle-card1.png);
+            height: 280px;
+            width: 280px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+    }
+  }
+
+
+  .valeur_card {
+    .img_card_container1 {
+        .container_circle_card1 {
+            background-image: url(../../assets/images/circle-card1.png);
+        }
+    }
+  }
+  .valeur_card {
+    .img_card_container2 {
+        .container_circle_card2 {
+            background-image: url(../../assets/images/circle-card2.png);
+        }
+    }
+  }
+  .valeur_card {
+    .img_card_container3 {
+        .container_circle_card3 {
+            background-image: url(../../assets/images/circle-card3.png);
+        }
+    }
+  }
+  
+
+  .valeur_card2 {
+    width: 50%;
+}
+
+
+// RAMEN HOME ICONS
+
+.container_img_home {
+    position: relative;
+    width: 50%;
+    img {
+        width: 100%;
+        height: max-content;
+    }
+    .piquance_home {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $darker-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+        width: fit-content;
+        p {
+            color: $orange;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .degre_piquance {
+            display: flex;
+            gap: 1rem;
+            .fire-full-home:before  {
+                color: $orange;
+                font-size: 1.5rem;
+            }
+            .fire-stroke-home:before  {
+                color: $orange;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+// FOOTER CONTACT
+
+.icon-google-contact:before {
+    color: #fff;
+    font-size: 1rem;
+}

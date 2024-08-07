@@ -1,0 +1,79 @@
+.container__contact {
+  background-image: url(../../assets/images/bg-contact.jpg);
+  background-size: cover;
+  padding: 6rem 4rem;
+}
+.container__contact h2 {
+  color: #FFE8D6;
+  width: 45%;
+}
+.container__contact h2 span {
+  position: relative;
+}
+.container__contact h2 span::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/images/circle-footer.png);
+  background-size: cover;
+  width: 252px;
+  height: 81px;
+  left: -12px;
+  top: -4px;
+}
+
+.contact_content_box {
+  padding: 2rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact_content_box .contact_adresse {
+  border-top: 1px solid #574867;
+  border-bottom: 1px solid #574867;
+  padding: 2rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact_content_box .contact_adresse .line_adresse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFE8D6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.contact_content_box .contact_adresse .link_map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.contact_content_box .contact_tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0 0 0;
+  gap: 1rem;
+}
+.contact_content_box .contact_tel p {
+  color: #FFE8D6;
+}
+.contact_content_box i:before {
+  color: #FFE8D6;
+}

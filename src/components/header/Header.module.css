@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../../assets/icon-fonts/icomoon.eot?832r8v");
+  src: url("../../assets/icon-fonts/icomoon.eot?832r8v#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/icomoon.ttf?832r8v") format("truetype"), url("../../assets/icon-fonts/icomoon.woff?832r8v") format("woff"), url("../../assets/icon-fonts/icomoon.svg?832r8v#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basket:before {
+  content: "\e900";
+  color: #fff;
+}
+
+.icon-ramen:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-youtube:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-twitter:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.icon-phone:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-map-pin:before {
+  content: "\e905";
+  color: #fff;
+}
+
+.icon-insta:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.icon-google:before {
+  content: "\e907";
+  color: #fff;
+}
+
+.icon-fire-stroke:before {
+  content: "\e908";
+  color: #fff;
+}
+
+.icon-fire-full:before {
+  content: "\e909";
+  color: #fff;
+}
+
+.icon-facebook:before {
+  content: "\e90a";
+  color: #fff;
+}
+
+.icon-close:before {
+  content: "\e90b";
+  color: #fff;
+}
+
+.icon-arrow-right:before {
+  content: "\e90c";
+  color: #fff;
+}
+
+.icon-arrow-down:before {
+  content: "\e90d";
+  color: #fff;
+}
+
+.header {
+  background-color: #170647;
+}
+.header__container {
+  padding: 2rem 4rem;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__nav__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+.header__nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+.header__logo {
+  background-image: url(../../assets/images/logo-header.png);
+  height: 48px;
+  width: 120px;
+  background-size: contain;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__logo:hover {
+  rotate: -3deg;
+}
+.header__nav_panier {
+  font-size: 0.75rem;
+  color: #FFE8D6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+.header__nav_lang ._flag {
+  background-image: url(../../assets/images/france.jpg);
+  width: 26px;
+  height: 1rem;
+  background-size: cover;
+}
