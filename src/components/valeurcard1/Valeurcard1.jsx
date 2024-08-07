@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import img_card1 from '../../assets/images/valeur1.jpg'
 import s from './valeurcard1.module.scss';
 
