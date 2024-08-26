@@ -36,3 +36,41 @@
 Valeurcard2 {
     width: 33.33%;
 }
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .content__valeurs_text_duo {
+        width: 100%;
+    }
+
+    .valeur_section_text {
+        width: 100%;
+        h2 {
+            span {
+                &::after {
+                    width: 180px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    Valeurcard2 {
+        width: 100%;
+    }
+
+    .content__valeurs_duo {
+        width: 100%;
+    }
+    
+
+}
+@media only screen and (max-width: 575px) {
+}

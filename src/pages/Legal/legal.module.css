@@ -1,0 +1,36 @@
+.content_legal {
+  padding: 4rem 0;
+  color: #E1D7FF;
+}
+.content_legal .content_legal_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.content_legal .content_legal_text .bloc_legal_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content_legal .content_legal_text .bloc_legal_text p:first-child {
+  font-weight: bold;
+}
+
+p {
+  line-height: 160%;
+}
+
+@media only screen and (max-width: 768px) {
+  .content_legal {
+    padding: 2rem 0;
+  }
+}

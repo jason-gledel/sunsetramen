@@ -29,8 +29,7 @@ const Ramenhome = () => {
                             <p className="text_beige">Bouillon de poulet, sauce soja, huile de piment, ail, gingembre, nouilles ramen, tranches de bœuf mariné épicé, tranches de jalapeño, kimchi, bok choy sauté, œuf mollet, filet de sriracha, flocons de piment rouge broyés, oignons frits croustillants, coriandre fraîche.</p>
                             <p className="prix_main">13,50€</p>
                             <div className="buttons_couple">
-                                <Link to="#" className="main_btn_orange_cart">ajouter au panier <span className="icon-basket basket-ramenhome"></span></Link>
-                                <Link to="/menu" className="secondary_btn btn_beige">voir le menu</Link>
+                                <Link to="/menu" className="main_btn_orange_cart">voir le menu</Link>
                             </div>
                         </div>
                     </div>

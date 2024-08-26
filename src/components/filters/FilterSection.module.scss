@@ -1,0 +1,31 @@
+.filter_container {
+    width: 20%;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .filter_container {
+        width: fit-content;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    
+
+
+}
+@media only screen and (max-width: 768px) {
+
+
+}
+@media only screen and (max-width: 575px) {
+
+    .filter_container {
+        width: fit-content;
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,8 @@
+@import '../../styles/scss/variables';
+@import '../../styles/scss/iconfonts';
+
+
+
+.icon-fire-stroke::before {
+    color: $red !important;
+}

@@ -7,10 +7,9 @@ const Footerdown = () => {
     return (
         <section className={s.container__footerdown}>
           <div className={s.line_logo_nav}>
-            <Link className={s.logo_footer}></Link>
+            <Link to="/" className={s.logo_footer}></Link>
             <nav className={s.nav_footer}>
                 <Link to="/menu" className="secondary_btn btn_light_blue">le menu</Link>
-                <Link to="#" className="secondary_btn btn_light_blue">contact</Link>
             </nav>
           </div>
           <div className={s.line_socials_mentions}>
@@ -21,7 +20,7 @@ const Footerdown = () => {
                 <Link to="#" ><i className="icon-facebook"></i></Link>
             </div>
             <div className={s.mentions}>
-                <Link to="#" className="secondary_btn btn_grey_blue">mentions légales</Link>
+                <Link to="/legal" className="secondary_btn btn_grey_blue">mentions légales</Link>
                 <p>© 2024 - Sunset Ramen - All rights reserved</p>
             </div>
           </div>

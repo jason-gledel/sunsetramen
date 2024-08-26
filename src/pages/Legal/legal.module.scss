@@ -1,0 +1,29 @@
+@import '../../styles/scss/variables';
+
+
+.content_legal {
+    padding: 4rem 0;
+    color:$light-blue;
+    .content_legal_text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .bloc_legal_text {
+            display: flex;
+            flex-direction: column;
+            p:first-child {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+p {
+    line-height: 160%;
+}
+
+@media only screen and (max-width: 768px) {
+    .content_legal {
+        padding: 2rem 0;
+    }
+}

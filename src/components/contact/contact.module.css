@@ -77,3 +77,52 @@
 .contact_content_box i:before {
   color: #FFE8D6;
 }
+
+@media only screen and (max-width: 992px) {
+  .container__contact h2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container__contact {
+    padding: 2rem 2rem;
+  }
+  .container__contact h2 span::after {
+    width: 170px;
+    height: 55px;
+  }
+  .contact_content_box {
+    padding: 2rem 0 0 0;
+  }
+  .contact_content_box .contact_adresse {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .container__contact {
+    padding: 1rem 1rem;
+  }
+  .contact_content_box {
+    padding: 2rem 0 0 0;
+  }
+  .contact_content_box .contact_adresse {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .contact_content_box .contact_tel {
+    padding: 2rem 0 1rem 0;
+  }
+}

@@ -40,3 +40,36 @@
         }
     }
 }
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .container__footerdown {
+        .line_socials_mentions {
+            gap: 2rem;
+            flex-direction: column;
+        }
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .container__footerdown {
+        padding: 2rem 1rem;
+        .line_socials_mentions {
+            .mentions {
+                flex-direction: column;
+            }
+        }
+        .line_logo_nav {
+            flex-direction: column;
+            align-items: baseline;
+            gap: 2rem;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+   
+
+}

@@ -20,3 +20,35 @@
         }
     }
 }
+
+
+
+
+// RESPONSIVE 
+
+
+@media only screen and (max-width: 992px) {
+    .ramenhome {
+        .ramen_content_flex {
+            .content_ramen_text {
+                width: 65%;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .ramenhome {
+        padding: 3rem 0;
+        gap: 2rem;
+        .ramen_content_flex {
+            flex-direction: column;
+            .content_ramen_text {
+                width: 100%;
+            }
+        }
+    }
+}

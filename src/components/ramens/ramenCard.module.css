@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../../assets/icon-fonts/icomoon.eot?832r8v");
+  src: url("../../assets/icon-fonts/icomoon.eot?832r8v#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/icomoon.ttf?832r8v") format("truetype"), url("../../assets/icon-fonts/icomoon.woff?832r8v") format("woff"), url("../../assets/icon-fonts/icomoon.svg?832r8v#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\e90e";
+  color: #fff;
+}
+
+.icon-basket:before {
+  content: "\e900";
+  color: #fff;
+}
+
+.icon-ramen:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-youtube:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-twitter:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.icon-phone:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-map-pin:before {
+  content: "\e905";
+  color: #fff;
+}
+
+.icon-insta:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.icon-google:before {
+  content: "\e907";
+  color: #fff;
+}
+
+.icon-fire-stroke:before {
+  content: "\e908";
+}
+
+.icon-fire-full:before {
+  content: "\e909";
+}
+
+.icon-facebook:before {
+  content: "\e90a";
+  color: #fff;
+}
+
+.icon-close:before {
+  content: "\e90b";
+  color: #fff;
+}
+
+.icon-arrow-right:before {
+  content: "\e90c";
+  color: #fff;
+}
+
+.icon-arrow-down:before {
+  content: "\e90d";
+  color: #fff;
+}
+
+.ramenCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(33.33% - 2rem);
+          flex: 1 1 calc(33.33% - 2rem); /* Largeur calculée */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: calc(33.33% - 2rem);
+}
+.ramenCard img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ramenCard .ramenCardContent {
+  padding: 2rem;
+  background: #FFE8D6;
+  background-image: url(../../assets/images/bg-noir.png);
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ramenCard .ramenCardContent .title_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.ramenCard .ramenCardContent .title_content .ramenTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: normal;
+}
+.ramenCard .ramenCardContent .title_content .spicinessLabel {
+  background: #2F1870;
+  color: #FB954B;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+.ramenCard .ramenCardContent p {
+  color: #2F1870;
+}
+.ramenCard .ramenCardContent .price_basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.ramenCard .ramenCardContent .price_basket .prix {
+  background: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: 1px dashed #2F1870;
+  font-weight: bold;
+}
+.ramenCard .ramenCardContent .price_basket .buttonBg {
+  width: 100%;
+  background: rgb(255, 159, 49);
+  position: relative;
+}
+.ramenCard .ramenCardContent .price_basket .buttonBg:hover::after {
+  width: 100%;
+}
+.ramenCard .ramenCardContent .price_basket .buttonBg::after {
+  background: rgb(251, 187, 67);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  top: 0;
+}
+.ramenCard .ramenCardContent .price_basket .buttonBg .basketBtn {
+  padding: 1rem;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  width: 100%;
+  color: #170647;
+}
+
+@media only screen and (max-width: 992px) {
+  .ramenCard {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(50% - 2rem);
+            flex: 1 1 calc(50% - 2rem); /* Largeur calculée */
+    max-width: calc(50% - 2rem);
+  }
+}
+@media only screen and (max-width: 575px) {
+  .ramenCard {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%; /* Largeur calculée */
+    max-width: 100%;
+  }
+}

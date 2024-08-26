@@ -23,7 +23,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+  .icon-check:before {
+    content: "\e90e";
+    color: #fff;
+  }
   .icon-basket:before {
     content: "\e900";
     color: #fff;
@@ -58,11 +61,9 @@
   }
   .icon-fire-stroke:before {
     content: "\e908";
-    color: #fff;
   }
   .icon-fire-full:before {
     content: "\e909";
-    color: #fff;
   }
   .icon-facebook:before {
     content: "\e90a";
