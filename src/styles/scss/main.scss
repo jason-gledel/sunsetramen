@@ -103,6 +103,10 @@ a {
     gap: 1rem;
     color: #fff;
     font-weight: bold;
+    transition: 0.3s;
+    &:hover {
+        gap: 2rem;
+    }
 }
 
 .primary_stroke_orange {
@@ -381,6 +385,13 @@ h2 {
     display: flex;
     gap: 1rem;
     align-items: center;
+    transition: 0.3s;
+    border: 1px solid $orange;
+    &:hover {
+        background: $dark-blue;
+        color: $beige;
+        border: 1px solid $beige;
+    }
 }
 
 
@@ -664,11 +675,19 @@ input.vegeInput[type="checkbox"]{
         color: $vert;
         background: #F1FFEA;
         width: 100%;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.8;
+        }
     }
     .veganLabel {
         color: #F1FFEA;
         background: #5ABFA1;
         width: 100%;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
 
