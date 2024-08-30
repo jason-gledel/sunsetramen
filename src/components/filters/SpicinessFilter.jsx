@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import s from './SpicinessFilter.module.scss';
 
-const SpicinessFilter = ({ filters, setFilters }) => {
+const SpicinessFilter = ({ filters, setFilters, scrollToTop }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleSpicinessChange = (value) => {
@@ -13,6 +13,7 @@ const SpicinessFilter = ({ filters, setFilters }) => {
       
       return { ...prevFilters, spiciness: newSpiciness };
     });
+    scrollToTop(); // Remonter la page en haut après le changement de filtre
   };
 
   return (
@@ -50,7 +51,6 @@ const SpicinessFilter = ({ filters, setFilters }) => {
               />
               Pique fort
             </span>
-
             <span className="fireDiv"><i className="icon-fire-full"></i><i className="icon-fire-full"></i><i className="icon-fire-stroke"></i></span>
           </label>
           <label>
@@ -64,7 +64,6 @@ const SpicinessFilter = ({ filters, setFilters }) => {
             />
             De la lave
           </span>
-
           <span className="fireDiv"><i className="icon-fire-full"></i><i className="icon-fire-full"></i><i className="icon-fire-full"></i></span>
           </label>
         </div>

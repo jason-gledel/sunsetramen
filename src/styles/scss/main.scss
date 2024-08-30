@@ -529,7 +529,6 @@ h2 {
 // FILTRES MENU
 
 .filterItem {
-    margin-bottom: 1rem;
     background: $light-red;
     display: flex;
     flex-direction: column;
@@ -728,10 +727,6 @@ input.vegeInput[type="checkbox"]{
     }
 
 
-    .filterItem {
-        margin-bottom: 0;
-    }
-    
 
 
 }

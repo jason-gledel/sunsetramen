@@ -1,5 +1,11 @@
 .filter_container {
   width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  top: 10rem;
+  margin-bottom: 4rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -11,6 +17,7 @@
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 1rem;
+    position: inherit;
   }
 }
 @media only screen and (max-width: 575px) {

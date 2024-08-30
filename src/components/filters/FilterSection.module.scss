@@ -1,5 +1,9 @@
 .filter_container {
     width: 20%;
+    height: fit-content;
+    position: sticky;
+    top: 10rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -9,6 +13,7 @@
         width: fit-content;
         display: flex;
         margin-bottom: 1rem;
+        position: inherit;
     }
     
 

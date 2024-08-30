@@ -6,15 +6,16 @@ import s from './FilterSection.module.scss';
 
 const FilterSection = ({ filters, setFilters }) => {
 
-  console.log(Array.isArray(filters.spiciness)); // Doit être true
-  console.log(filters.spiciness);
-  
+  // Fonction pour remonter la page en haut
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className={s.filter_container}>
-      <SpicinessFilter filters={filters} setFilters={setFilters} />
-      <VegetarianFilter filters={filters} setFilters={setFilters} />
-      <VeganFilter filters={filters} setFilters={setFilters} />
+      <SpicinessFilter filters={filters} setFilters={setFilters} scrollToTop={scrollToTop} />
+      <VegetarianFilter filters={filters} setFilters={setFilters} scrollToTop={scrollToTop} />
+      <VeganFilter filters={filters} setFilters={setFilters} scrollToTop={scrollToTop} />
     </div>
   );
 };
