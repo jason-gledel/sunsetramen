@@ -32,7 +32,7 @@ const RamenList = ({ ramens, filters, onAddToCart }) => {
           <RamenCard key={ramen.id} ramen={ramen} onAddToCart={onAddToCart} />
         ))
       ) : (
-        <p>Aucun ramen ne correspond à vos critères de filtrage.</p>
+        <p className={s.noResult}>Aucun ramen ne correspond à vos critères de filtrage.</p>
       )}
     </div>
   );

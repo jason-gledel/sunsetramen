@@ -13,6 +13,14 @@
           justify-content: flex-start;
   margin-bottom: 4rem;
 }
+.ramenList .noResult {
+  color: #FFE8D6;
+  padding: 1rem;
+  border: 1px solid #FFE8D6;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 
 @media only screen and (max-width: 992px) {
   .ramenList {
